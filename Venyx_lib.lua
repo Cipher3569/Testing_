@@ -221,6 +221,7 @@ do
 			utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
+				AnchorPoint = Vector2.new(0.5, 0.5)
 				Position = fromScale(0.5, 0.5),
 				Size = UDim2.new(0, 511, 0, 428),
 				Image = "rbxassetid://4641149554",
