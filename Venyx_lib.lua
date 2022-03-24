@@ -204,6 +204,8 @@ local library = {} -- main
 local page = {}
 local section = {}
 
+local fromScale = UDim2.fromScale
+
 do
 	library.__index = library
 	page.__index = page
@@ -219,7 +221,7 @@ do
 			utility:Create("ImageLabel", {
 				Name = "Main",
 				BackgroundTransparency = 1,
-				Position = UDim2.new(0.25, 0, 0.052435593, 0),
+				Position = fromScale(0.5, 0.5),
 				Size = UDim2.new(0, 511, 0, 428),
 				Image = "rbxassetid://4641149554",
 				ImageColor3 = themes.Background,
